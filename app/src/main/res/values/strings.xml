@@ -1,0 +1,22 @@
+<resources>
+    <string name = "app_name">Assignment6</string>
+    <string name = "title_explore">Explore</string>
+    <string name = "title_gird">Show In Grid</string>
+    <string name = "title_camera">Camera</string>
+    <string name = "title_noti">Notification</string>
+    <string name = "title_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name = "hello_blank_fragment">Hello blank fragment</string>
+    <string name = "discover_restaurants">Discover\nRestaurants</string>
+    <string name = "details">Details</string>
+    <string name = "menu">Menu</string>
+    <string name = "reviews">Reviews</string>
+    <string name = "distance_dummy">1.5 km</string>
+    <string name = "map_view">Map View</string>
+    <string name = "delivery">Delivery</string>
+    <string name = "lbl_ok">OK</string>
+    <string name = "str_geo"><![CDATA[http://maps.google.com/maps?daddr=]]>%1$s,%2$s</string>
+    <string name = "search">Search</string>
+
+</resources>

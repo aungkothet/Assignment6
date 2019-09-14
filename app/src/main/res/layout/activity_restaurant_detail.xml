@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@color/colorPrimary"
+    tools:context = ".activities.RestaurantDetailActivity">
+
+    <ImageView
+        android:id = "@+id/detail_restaurant_image"
+        android:layout_width = "match_parent"
+        android:layout_height = "0dp"
+        android:layout_weight="0.8"
+        android:scaleType="centerCrop"
+        android:src = "@drawable/default_image" />
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width = "match_parent"
+        android:layout_marginStart="@dimen/margin_xlarge"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:layout_height = "0dp"
+        android:layout_marginTop="-60dp"
+        android:backgroundTint="@color/colorCardBg"
+        app:cardCornerRadius="10dp"
+        android:layout_weight="1.2"
+        >
+        <RelativeLayout
+            android:layout_width = "match_parent"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_height = "wrap_content">
+
+            <FrameLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:id="@+id/detail_frame_layout"
+                android:layout_above="@id/detail_bottom_tab">
+
+            </FrameLayout>
+            <android.support.design.widget.TabLayout
+                android:layout_width = "match_parent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/detail_bottom_tab"
+                android:background="@drawable/bg_line_for_tab_layout"
+                app:tabIndicatorColor="@color/colorTextTitle"
+                app:tabIndicatorGravity="top"
+                app:tabSelectedTextColor="@color/colorTextTitle"
+                app:tabTextColor="@color/colorTextContent"
+                android:layout_height = "wrap_content">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/detail_tab"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text="@string/details"/>
+                <android.support.design.widget.TabItem
+                    android:id="@+id/menu_tab"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text="@string/menu"/>
+                <android.support.design.widget.TabItem
+                    android:id="@+id/review_tab"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:text="@string/reviews"/>
+            </android.support.design.widget.TabLayout>
+        </RelativeLayout>
+    </android.support.design.card.MaterialCardView>
+</LinearLayout>

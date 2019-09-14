@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:layout_marginStart = "@dimen/margin_medium"
+    android:layout_marginEnd = "@dimen/margin_medium"
+    android:background = "@color/colorCardBg"
+    android:paddingTop = "@dimen/margin_medium"
+    android:paddingBottom = "@dimen/margin_medium">
+
+    <org.mmtextview.components.MMTextView
+        android:id = "@+id/tv_menu_name"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_toStartOf = "@id/tv_menu_price"
+        android:textColor = "@color/colorTextDesc"
+        tools:text = "Hot Pot and BBQ Buffet" />
+
+    <TextView
+        android:id = "@+id/tv_menu_price"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentEnd = "true"
+        android:textColor = "@color/colorTextDesc"
+        tools:text = "3500" />
+</RelativeLayout>

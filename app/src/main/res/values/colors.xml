@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "colorPrimary">#242132</color>
+    <color name = "colorPrimaryDark">#171520</color>
+    <color name = "colorAccent">#5877fa</color>
+    
+    <color name = "colorTextTitle">#FFFFFF</color>
+    <color name = "colorTextDesc">#F0f0f0</color>
+    <color name = "colorTextContent">#9793a6</color>
+
+    <color name = "colorBlur">#00252231</color>
+    <color name = "colorCardBg">#373346</color>
+</resources>

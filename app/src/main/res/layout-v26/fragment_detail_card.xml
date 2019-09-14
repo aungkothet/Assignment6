@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/colorCardBg"
+    tools:context = ".fragments.DetailCardFragment">
+
+
+    <org.mmtextview.components.MMTextView
+        android:id = "@+id/detail_restaurant_name"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginEnd = "@dimen/margin_medium_3"
+        android:layout_toStartOf = "@id/detail_restaurant_location_fab"
+        android:textColor = "@color/colorTextTitle"
+        android:textSize = "@dimen/text_heading_2x"
+        tools:text = "Pickle, jam and chutney adad" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id = "@+id/detail_restaurant_location_fab"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_alignParentEnd = "true"
+        android:layout_marginTop = "@dimen/margin_medium_2"
+        android:src = "@drawable/ic_near_me"
+        android:tint = "@color/colorTextTitle" />
+
+    <org.mmtextview.components.MMTextView
+        android:id = "@+id/detail_restaurant_desc"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/detail_restaurant_name"
+        android:layout_marginTop = "@dimen/margin_medium_3"
+        android:textAlignment = "viewStart"
+        android:textColor = "@color/colorTextContent"
+        android:justificationMode="inter_word"
+        tools:text = "@tools:sample/lorem/random" />
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/detail_restaurant_desc"
+        android:layout_marginTop = "@dimen/margin_medium_3"
+        android:orientation = "horizontal"
+        android:weightSum = "4">
+
+        <TextView
+            android:id = "@+id/detail_opening_hour"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:drawableTop = "@drawable/clock"
+            android:textAlignment = "center"
+            android:textColor = "@color/colorTextContent"
+            tools:text = "10p,- 12pm" />
+
+        <TextView
+            android:id = "@+id/detail_distance"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:drawableTop = "@drawable/distance"
+            android:text = "@string/distance_dummy"
+            android:textAlignment = "center"
+            android:textColor = "@color/colorTextContent" />
+
+        <TextView
+            android:id = "@+id/detail_map_view"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:drawableTop = "@drawable/map"
+            android:text = "@string/map_view"
+            android:textAlignment = "center"
+            android:textColor = "@color/colorTextContent" />
+
+        <TextView
+            android:id = "@+id/detail_delivery"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:drawableTop = "@drawable/store"
+            android:text = "@string/delivery"
+            android:textAlignment = "center"
+            android:textColor = "@color/colorTextContent" />
+
+
+    </LinearLayout>
+</RelativeLayout>
