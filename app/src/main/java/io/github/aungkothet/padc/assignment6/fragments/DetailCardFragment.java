@@ -56,11 +56,6 @@ public class DetailCardFragment extends Fragment {
         return fragment;
     }
 
-
-//    public void setRestaurantVo(RestaurantVo restaurantVo) {
-//        this.restaurantVo = restaurantVo;
-//    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -70,7 +65,6 @@ public class DetailCardFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_detail_card, container, false);
         ButterKnife.bind(this,view);
         restaurantVo = (RestaurantVo)getArguments().getSerializable(BE_RESTAURNAT);
@@ -92,7 +86,6 @@ public class DetailCardFragment extends Fragment {
     }
 
     private void bindViewData(RestaurantVo restaurantVo) {
-        Log.d("TAG",restaurantVo.getName()+"in bindView");
         restaurantName.setText(restaurantVo.getName());
         restaurantDesc.setText(restaurantVo.getDescription());
         openingHour.setText(restaurantVo.getOpeningClosingTimes().getOpeningTime() + " - "

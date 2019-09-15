@@ -56,7 +56,6 @@ public class MainActivity extends BaseActivity implements RestaurantItemDelegate
 
     @Override
     public void onItemClicked(int id) {
-        Log.d("TAG","INMAIN"+id);
         startActivity(RestaurantDetailActivity.newIntent(MainActivity.this,id));
     }
 

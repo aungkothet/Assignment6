@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
-    xmlns:app = "http://schemas.android.com/apk/res-auto"
     xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:background = "@color/colorCardBg"
     tools:context = ".fragments.DetailCardFragment">
 
-
     <org.mmtextview.components.MMTextView
         android:id = "@+id/detail_restaurant_name"
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
-        android:layout_marginEnd = "@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
         android:layout_toStartOf = "@id/detail_restaurant_location_fab"
         android:textColor = "@color/colorTextTitle"
         android:textSize = "@dimen/text_heading_2x"
@@ -23,6 +23,7 @@
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
         android:layout_alignParentEnd = "true"
+        android:layout_marginEnd="@dimen/margin_medium"
         android:layout_marginTop = "@dimen/margin_medium_2"
         android:src = "@drawable/ic_near_me"
         android:tint = "@color/colorTextTitle" />
@@ -31,18 +32,22 @@
         android:id = "@+id/detail_restaurant_desc"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
-        android:layout_below = "@id/detail_restaurant_name"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_below = "@id/detail_restaurant_location_fab"
+        android:layout_above="@+id/layout_bottoms"
         android:layout_marginTop = "@dimen/margin_medium_3"
         android:textAlignment = "viewStart"
-        android:textColor = "@color/colorTextContent"
         android:justificationMode="inter_word"
+        android:textColor = "@color/colorTextContent"
         tools:text = "@tools:sample/lorem/random" />
 
     <LinearLayout
+        android:id="@+id/layout_bottoms"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
-        android:layout_below = "@id/detail_restaurant_desc"
-        android:layout_marginTop = "@dimen/margin_medium_3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop = "@dimen/margin_medium_2"
         android:orientation = "horizontal"
         android:weightSum = "4">
 
@@ -54,7 +59,7 @@
             android:drawableTop = "@drawable/clock"
             android:textAlignment = "center"
             android:textColor = "@color/colorTextContent"
-            tools:text = "10p,- 12pm" />
+            tools:text = "10pm - 12pm" />
 
         <TextView
             android:id = "@+id/detail_distance"

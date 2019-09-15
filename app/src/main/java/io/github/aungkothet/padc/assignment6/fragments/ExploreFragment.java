@@ -95,7 +95,7 @@ public class ExploreFragment extends Fragment {
             }
         });
 
-        MainActivity.restaurantModel.getAllRestaurants(Constants.ACCESS_TOKEN, new RestaurantModel.GetRestaurantListFromDataLayerDelegate() {
+        RestaurantModelImpl.getObjInstance().getAllRestaurants(Constants.ACCESS_TOKEN, new RestaurantModel.GetRestaurantListFromDataLayerDelegate() {
             @Override
             public void onSuccess(List<RestaurantVo> houseVoList) {
                 adapter.setViewData(houseVoList);

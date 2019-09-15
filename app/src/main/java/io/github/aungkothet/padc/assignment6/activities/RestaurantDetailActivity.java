@@ -61,8 +61,6 @@ public class RestaurantDetailActivity extends BaseActivity implements Restaurant
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
-
-
     }
 
     private void changeFragment(int i) {
